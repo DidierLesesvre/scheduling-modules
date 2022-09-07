@@ -1,8 +1,6 @@
 % Run with COIN-BC solver
-% data4.dzn (n=150, m=10, c=5, g=5) in 7s
-% data4.dzn (n=150, m=11, c=5, g=5) in 46s
     
-            % PARAMETERS
+    % PARAMETERS
     
     int: n; % number of students
     set of int: STUDENTS=1..n; % students
@@ -25,7 +23,7 @@
     
     array[STUDENTS,TOPICS] of PREFERENCE: preference; % ranking of topics by each student
 
-% VARIABLES
+    % VARIABLES
     
     array[STUDENTS, TOPICS] of var bool: topicSelected;
     array[TOPICS, TIMESLOTS] of var 0..n: number;
