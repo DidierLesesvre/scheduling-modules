@@ -22,6 +22,14 @@ and with the following constraints:
 
 The minimization is essentially on a sum of preferences to a certain power, to rule out pretty quickly low preferences. 
   
+The output is :
+  
+- each line correspond to a student
+- the first list contains the assigned topics
+- the second list constains the corresponding group/instance/time slot
+- the last list contains the corresponding preferences (to have a feeling on how tolerable is the result)
+- the sizes of the groups and timeslots assignments are displayed at the end
+  
 An efficient solver to use this model is coin-bc.
 
 # In practice: from a spreadsheet containing the list of students and preferences
