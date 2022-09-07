@@ -1,6 +1,9 @@
 
 Scheduling MiniZinc model to assign students to various groups of various topics, and assigning each group to a timeslot
 
+- scheduling-modules.mzn is the MiniZinc model
+- data<n>.mzn are example data files
+
 # Purpose
 
 This MiniZinc model gives an optimal schedule with the following data:
@@ -18,6 +21,8 @@ and with the following constraints:
 - the groups have bounded size (from above and below)
 
 The minimization is essentially on a sum of preferences to a certain power, to rule out pretty quickly low preferences. 
+  
+An efficient solver to use this model is coin-bc.
 
 # In practice: from a spreadsheet containing the list of students and preferences
 
